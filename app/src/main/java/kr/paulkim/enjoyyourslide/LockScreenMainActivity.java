@@ -27,6 +27,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import kr.paulkim.enjoyyourslide.model.Weather;
+import kr.paulkim.enjoyyourslide.openweathermap.JSONWeatherParser;
 
 
 public class LockScreenMainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, SensorEventListener {

@@ -12,7 +12,6 @@ import org.json.JSONObject;
 
 import kr.paulkim.enjoyyourslide.model.Location;
 import kr.paulkim.enjoyyourslide.model.Weather;
-import kr.paulkim.enjoyyourslide.openweathermap.
 
 import android.os.AsyncTask;
 import android.os.Bundle;
