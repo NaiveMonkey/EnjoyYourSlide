@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "328425592128",
+    "project_id": "enjoyyourslide"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328425592128:android:2d4f5fe11986a3d0",
+        "android_client_info": {
+          "package_name": "kr.study.enjoyyourslide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328425592128-uc9nb51r37ep23smti42rj1jgnau5ldq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.study.enjoyyourslide",
+            "certificate_hash": "6F5611E553FE69CF9045EAF52AFDD9C6A3DB8637"
+          }
+        },
+        {
+          "client_id": "328425592128-qekhu5pv3899a1s24qiugqa08bn4qp76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8vGT-y4BvHPTexxewvglXwLijG43_tQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328425592128:android:8e3206b1f110a4e9",
+        "android_client_info": {
+          "package_name": "kr.paulkim.enjoyyourslide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328425592128-407g4pmv70vjv5mdjus2ee2poe97derv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.paulkim.enjoyyourslide",
+            "certificate_hash": "98DD44D04F477EED51C642A09A27E805D8EAF22A"
+          }
+        },
+        {
+          "client_id": "328425592128-qekhu5pv3899a1s24qiugqa08bn4qp76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8vGT-y4BvHPTexxewvglXwLijG43_tQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
