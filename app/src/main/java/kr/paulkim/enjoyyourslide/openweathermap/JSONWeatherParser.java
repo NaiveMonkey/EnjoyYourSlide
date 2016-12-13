@@ -1,11 +1,11 @@
-package kr.paulkim.enjoyyourslide;
+package kr.paulkim.enjoyyourslide.openweathermap;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import kr.paulkim.enjoyyourslide.model.Location;
-import kr.paulkim.enjoyyourslide.model.Weather;
+import kr.paulkim.enjoyyourslide.openweathermap.model.Location;
+import kr.paulkim.enjoyyourslide.openweathermap.model.Weather;
 
 /**
  * Created by 김새미루 on 2016-06-05.

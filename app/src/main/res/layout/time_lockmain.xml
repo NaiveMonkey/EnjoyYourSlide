@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.paulkim.enjoyyourslide.LockScreenMainActivity">
+
+    <!--
+        <RelativeLayout
+            android:id="@+id/testRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+            !-->
+
+
+    <TextView
+        android:id="@+id/testTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:text="Time"
+        android:textColor="#ffffff"
+        android:textSize="52dp" />
+
+    <TextView
+        android:id="@+id/testAM_PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Day"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/testMonth_Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Month"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+    <!--
+    <TextView
+        android:id="@+id/testlocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/testtemperatureTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/testtemperatureTextView"
+        android:layout_below="@+id/testTime"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/location"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/testweatherIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/testlocationTextView"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/condition_icon"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/na" />
+
+    <TextView
+        android:id="@+id/testtemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/testweatherIconImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/testlocationTextView"
+        android:layout_toRightOf="@+id/testweatherIconImageView"
+        android:gravity="center"
+        android:text="@string/temperature"
+        android:textColor="#03a9f4"
+        android:textSize="72dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/testcurrentCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/testlocationTextView"
+        android:layout_alignStart="@+id/testlocationTextView"
+        android:layout_centerVertical="true"
+        android:text="Current:"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/testconditionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/testcurrentCondition"
+        android:layout_toRightOf="@+id/testcurrentCondition"
+        android:text="@string/condition"
+        android:textColor="#000022"
+        android:textSize="17dp" />
+
+
+    <ImageView
+        android:id="@+id/testimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/powered_by_yahoo"
+        android:src="@drawable/yahoo_logo" />
+        !-->
+
+
+</RelativeLayout>

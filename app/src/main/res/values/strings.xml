@@ -1,4 +1,36 @@
 <resources>
     <string name="app_name">EnjoyYourSlide</string>
     <string name="action_settings">Settings</string>
+
+
+    <string name="temperature">Temp</string>
+    <string name="condition">Condition</string>
+    <string name="location">Location</string>
+    <string name="powered_by_yahoo">powered by Yahoo!</string>
+    <string name="condition_icon">Condition Icon</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="temperature_output">%1$d&#176;%2$s</string>
+    <string name="update_location">Update Location</string>
+    <string name="settings">Settings</string>
+    <string name="cache_exception">No Cached Weather Data</string>
+
+
+    <string name="forecast_date">Forecast_Date</string>
+    <string name="forecast_low">Forecast_Low</string>
+    <string name="forecast_high">Forecast_High</string>
+    <string name="forecast_condition">Forecast_Condition</string>
+    <string name="title_activity_second_intro">SecondLayoutIntro</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
 </resources>

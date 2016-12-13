@@ -12,7 +12,14 @@ public class RestartReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent i = new Intent(context, ScreenService.class);
+
+        Intent photo = new Intent(context, PhotoService.class);
+        context.startService(photo);
+
+        Intent count = new Intent(context, CountService.class);
+        context.startService(count);
+
+        Intent i = new Intent(context, LockScreenService.class);
         context.startService(i);
     }
 }

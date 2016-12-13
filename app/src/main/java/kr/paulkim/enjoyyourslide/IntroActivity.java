@@ -2,15 +2,21 @@ package kr.paulkim.enjoyyourslide;
 
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Window;
-
 
 public class IntroActivity extends AppCompatActivity {
     Handler mHandler;
-
+    Runnable mrun = new Runnable() {
+        @Override
+        public void run() {
+            startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            finish();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +27,6 @@ public class IntroActivity extends AppCompatActivity {
         mHandler = new Handler();
         mHandler.postDelayed(mrun, 2000);
     }
-
-
-    Runnable mrun = new Runnable() {
-        @Override
-        public void run() {
-            startActivity(new Intent(IntroActivity.this, LoginActivity.class));
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-            finish();
-        }
-    };
 
     @Override
     public void onBackPressed() {

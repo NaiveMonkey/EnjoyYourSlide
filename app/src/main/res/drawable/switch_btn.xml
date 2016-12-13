@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/on" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/off" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/off">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</selector>

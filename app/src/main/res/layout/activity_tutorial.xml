@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.paulkim.enjoyyourslide.Tutorial.TutorialActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorialViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:src="@drawable/x" />
+
+
+    <!--
+    <kr.paulkim.enjoyyourslide.Tutorial.CircleAnimIndicator
+        android:id="@+id/circleAnimIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:scaleX="0.4"
+        android:scaleY="0.4"></kr.paulkim.enjoyyourslide.Tutorial.CircleAnimIndicator>
+        !-->
+</RelativeLayout>

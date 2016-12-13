@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_gray"
+    android:orientation="horizontal"
+    android:padding="10dp"
+
+    tools:context=".ShortcutTestActivity">
+
+
+    <kr.paulkim.enjoyyourslide.RelativeLayoutAbsListView
+        android:id="@+id/area_shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/home_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="70dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <LinearLayout
+            android:id="@+id/deleteLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/deleteImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_delete_forever_white_24dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </kr.paulkim.enjoyyourslide.RelativeLayoutAbsListView>
+
+    <ImageView
+        android:id="@+id/selectImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/area_shortcut"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_select_all_white_24dp" />
+
+    <!--
+        <SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:scaleType="centerInside">
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_keyboard_arrow_up_white_24dp"
+                android:scaleType="centerInside" />
+
+
+            <GridView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Black_transparent"
+                android:columnWidth="70dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+
+            <Button
+                android:id="@+id/acceptBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/selector_sample"
+                android:text="선택"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_sample"
+                android:text="취소"
+                android:textColor="#ffffff" />
+
+    </SlidingDrawer>
+    !-->
+
+</RelativeLayout>

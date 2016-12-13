@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="kr.paulkim.enjoyyourslide">
 
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -7,16 +8,28 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Let&apos;s Slide"
+        android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".IntroActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +37,24 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".LockScreenMainActivity" />
+        <activity android:name=".AppMainActivity" />
+        <activity
+            android:name=".LockScreenMainActivity"
+            android:configChanges="orientation"
+            android:theme="@style/CustomActivityThemeNoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
 
-        <service android:name=".ScreenService" />
+        <service android:name=".LockScreenService" />
+        <service android:name=".LockScreenServiceTime" />
+        <service android:name=".PhotoService" />
+        <service android:name=".CountService" />
 
-        <activity android:name=".ProductListActivity" />
+        <activity
+            android:name=".ProductListActivity"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
 
         <receiver
             android:name=".RestartReceiver"
@@ -46,18 +71,33 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".PackageReceiver">
+
+        <activity android:name=".WeatherActivity" />
+        <activity
+            android:name=".AppTutorialActivity"
+            android:label="@string/title_activity_second_intro" />
+        <activity
+            android:name=".LockScreenShortcutActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:theme="@style/ShortCutTheme">
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <action android:name="android.intent.action.MAIN" />
 
-                <data android:scheme="package" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </receiver>
-
-        <activity android:name=".IntroActivity1" />
-        <activity android:name=".MainActivity"></activity>
+        </activity>
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".PopUpActivity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".ShortcutTestActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".TestVerticalActivity" />
+        <activity android:name=".Tutorial.TutorialActivity"></activity>
     </application>
 
 </manifest>

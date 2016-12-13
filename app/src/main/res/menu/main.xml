@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/lib/kr.paulkim.enjoyourslide"
-    >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kr.paulkim.enjoyyourslide.LockScreenMainActivity">
 
+    <!--
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_settings"
+        android1:title="서브메뉴"/>
+        !-->
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_changeCity"
+        android:orderInCategory="100"
+        android:title="Change City"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_setting"
+        android:orderInCategory="100"
+        android:title="Setting" />
+
 
 </menu>
